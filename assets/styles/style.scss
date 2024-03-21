@@ -1,1 +1,120 @@
-// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+main {
+    display: flex;
+    background-color: rgb(232, 239, 241);
+    justify-content: center;
+    align-items: center;
+    height: 810px;
+    width: 100%;
+    padding: 40px;
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 660px;
+    margin-right: 40px;
+}
+
+.phone-info {
+    font-size: 1.3rem;
+}
+
+.phone-info p {
+    margin: 10px;
+}
+
+.phone-info p img {
+    width: 20%;
+}
+
+/* Styles the container for the login section, including its layout, shadow, size, background color, and padding */
+
+.login-container {
+    display: flex;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    height: 612px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.finn-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bolder;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.form-group-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-group-1 input {
+    background-color: rgb(220, 220, 220);
+    height: 70px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+}
+
+input::placeholder {
+    color: rgb(132, 124, 124);
+    font-size: 1.4rem;
+    margin-left: 30px;
+    font-weight: 500;
+    text-indent: 20px;
+}
+
+.login-card__login-hint {
+    color: grey;
+}
+
+.form-group-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-reset, .stay-logged {
+    margin-bottom: 30px;
+}
+
+.form-group-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group-3 button {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(51, 100, 214);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.form-group-3 a {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}

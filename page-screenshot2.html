@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
+  <title>Finn Logg Inn</title>
+  <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
+
 <body>
-  
+  <main>
+
+    <!--Picture of phone with information-->
+
+    <div class="phone-info">
+      <p>
+        <img src="https://static.finncdn.no/_c/static/finn_iphone_98x200.png" alt="picture of a phone">
+      </p>
+      <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
+      <p>Problemer med innloggingen? <a href="#">Her kan du finne hjelp</a></p>
+      <p><a href="">Tilbake til FINN</a></p>
+    </div>
+
+    <!--Login container-->
+
+    <div class="login-container">
+      <div class="finn-logo">
+        <img src="misc/finn logo.png" alt="finn logo" width="46" height="18">
+        <img src="https://d3iwtia3ndepsv.cloudfront.net/web/v4.5.31/assets/4c671371b02d586f499a4d89bf58fa50.png"
+          alt="schibsted logo" width="115" height="24">
+      </div>
+      <h1>Logg inn</h1>
+      <form>
+        <div class="form-group-1">
+          <input type="text" placeholder="Skriv inn din e-postadresse *" class="login-card__login" />
+          <span class="login-card__login-hint">*Nødvendig felt</span>
+          <input type="password" placeholder="Vennligst oppgi passordet ditt *" class="login-card__login" />
+          <span class="login-card__login-hint">*Nødvendig felt</span>
+        </div>
+        <div class="form-group-2">
+          <a href="#" class="password-reset">Glemt passord?</a>
+          <div class="stay-logged">
+            <input type="checkbox" id="stay-logged-butt">
+            <label for="stay-logged-butt">Hold meg innlogget</label>
+          </div>
+        </div>
+        <div class="form-group-3">
+          <button type="submit" class="login-button">Logg på</button>
+          <a href="#" class="signup-link">Opprett ny konto</a>
+        </div>
+      </form>
+    </div>
+  </main>
 </body>
+
 </html>
