@@ -1,11 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
-</head>
-<body>
-  
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINN.no</title>
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <!-- Make sure this is the correct path to your compiled CSS -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <img
+          src="misc/finn-logo.png"
+          alt="FINN logo"
+          class="header__logo"
+        />
+        <span class="header__subtitle">Mulighetenes marked</span>
+      </div>
+      <nav class="header__nav">
+        <!-- Navigasjonslinkene som før -->
+        <a href="#" class="nav__item"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            part="w-icon-bell-24-part"
+          >
+            <title>Bjelle</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3"
+            ></path>
+          </svg>
+          Varslinger</a
+        >
+        <a href="#" class="nav__item"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            part="w-icon-circle-plus-24-part"
+          >
+            <title>Sirkel med plusstegn</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12 7.5v9M7.5 12h9M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"
+            ></path>
+          </svg>
+          Ny annonse</a
+        >
+        <a href="#" class="nav__item"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            part="w-icon-messages-24-part"
+          >
+            <title>Snakkebobler</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M21.75 18.75h-10.5l-6 4.5v-4.5h-3a1.5 1.5 0 0 1-1.5-1.5v-15a1.5 1.5 0 0 1 1.5-1.5h19.5a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M5.63 7.23a2.235 2.235 0 0 1 3.994 0m5 0a2.236 2.236 0 0 1 3.993 0m-2.637 5.535a5.747 5.747 0 0 1-7.711 0"
+            ></path>
+          </svg>
+          Meldinger</a
+        >
+        <a href="#" class="nav__item"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            part="w-icon-circle-user-24-part"
+          >
+            <title>Sirkel med brukerprofil</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12 15a5.25 5.25 0 1 0 0-10.5A5.25 5.25 0 0 0 12 15"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12 23.25c6.213 0 11.25-5.037 11.25-11.25S18.213.75 12 .75.75 5.787.75 12 5.787 23.25 12 23.25"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M7.476 7.084A8.7 8.7 0 0 0 13.75 9.75a8.7 8.7 0 0 0 3.39-.685M5.087 20.876a9.745 9.745 0 0 1 13.805-.021"
+            ></path>
+          </svg>
+          Min FINN</a>
+      </nav>
+    </header>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        class="search-bar__input"
+        placeholder="Søk etter ski eller smoking"
+      />
+      <!-- Add search button here -->
+    </div>
+    <div class="categories">
+      <!-- Torget -->
+      <a href="#" class="categories__item">
+        <span class="categories__icon"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="28"
+            fill="none"
+            viewBox="0 0 42 28"
+            part="w-icon-sofa-42-part"
+          >
+            <title>Sofa</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M33.567 10.5a1.9 1.9 0 0 0-1.367.585 2.04 2.04 0 0 0-.567 1.415v2c0 .265-.101.52-.283.707a.95.95 0 0 1-.683.293H11.333a.95.95 0 0 1-.683-.293 1.02 1.02 0 0 1-.283-.707v-2c0-.53-.204-1.04-.567-1.415a1.9 1.9 0 0 0-1.367-.585c-.512 0-1.004.21-1.367.585A2.04 2.04 0 0 0 6.5 12.5v4c0 1.06.407 2.078 1.133 2.828a3.8 3.8 0 0 0 2.734 1.172h21.266a3.8 3.8 0 0 0 2.735-1.172A4.07 4.07 0 0 0 35.5 16.5v-4c0-.53-.204-1.04-.566-1.415a1.9 1.9 0 0 0-1.367-.585m-23.2 10v3m21.266-3v3m-23.2-13c0-1.591.611-3.117 1.699-4.243A5.7 5.7 0 0 1 14.233 4.5h13.534a5.7 5.7 0 0 1 4.1 1.757 6.1 6.1 0 0 1 1.7 4.243M21 15.5v-11"
+            ></path></svg
+        ></span>
+        <span class="categories__text">Torget</span>
+      </a>
+
+      <!-- Eiendom -->
+      <a href="#" class="categories__item">
+        <span class="categories__icon"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="28"
+            fill="none"
+            viewBox="0 0 42 28"
+            part="w-icon-real-estate-42-part"
+          >
+            <title>Hus med hage</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10.714 13.143 23.571 2.857 36.43 13.143m-23.144 12V11.086m0 12.342c0-.946-.768-1.714-1.715-1.714h-.857a3.429 3.429 0 1 0-3.429 3.429h30.858"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M33.857 25.143V6.286H30.43v2.057m-4.287 15.943v-5.143a.857.857 0 0 0-.857-.857h-3.429a.857.857 0 0 0-.857.857v5.143m0-11.357v-2.143c0-.592.493-1.072 1.102-1.072h2.939c.608 0 1.102.48 1.102 1.072v2.143c0 .591-.494 1.071-1.102 1.071h-2.939C21.493 14 21 13.52 21 12.93Z"
+            ></path></svg
+        ></span>
+        <span class="categories__text">Eiendom</span>
+      </a>
+
+      <!-- Reise -->
+      <a href="#" class="categories__item">
+        <span class="categories__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="28"
+            fill="none"
+            viewBox="0 0 42 28"
+            part="w-icon-airplane-42-part"
+          >
+            <title>Fly</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16.286 14.143h-4.408a3.3 3.3 0 0 1-1.688-.414c-.52-.287-.96-.71-1.277-1.227L3.857 3.857H7.2l4.68 3.429h22.835a3.429 3.429 0 0 1 0 6.857h-8.571"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m18.061 12.428-2.204 1.715 2.204 1.714h8.082v-3.428h-8.082Zm-7.346-1.714h-6m24.857 15.428a2.571 2.571 0 1 1 1.844-4.362 3.428 3.428 0 1 1 3.298 4.362zM9 18.428a2.57 2.57 0 0 0-2.514 2.02 1.67 1.67 0 0 0-.914-.305 1.715 1.715 0 0 0 0 3.428H9a2.571 2.571 0 1 0 0-5.143"
+            ></path>
+          </svg>
+        </span>
+        <span class="categories__text">Reise</span>
+      </a>
+
+      <!-- Båt -->
+      <a href="#" class="categories__item">
+        <span class="categories__icon"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="28"
+            fill="none"
+            viewBox="0 0 42 28"
+            part="w-icon-sailboat-42-part"
+          >
+            <title>To fugler og en seilebåt på vannet</title>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m33 23.428 3.119-6.236a.43.43 0 0 0-.383-.62H6.266a.43.43 0 0 0-.384.62L9 23.428"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3.857 25.073c1.241.168 2.5.031 3.687-.402a8.3 8.3 0 0 0 3.17-2.1 7 7 0 0 0 2.329 1.849c.886.43 1.845.653 2.814.653s1.928-.222 2.814-.653A7 7 0 0 0 21 22.57a7 7 0 0 0 2.329 1.849c.886.43 1.844.653 2.814.653s1.928-.222 2.814-.653a7 7 0 0 0 2.329-1.849 8.3 8.3 0 0 0 3.17 2.1 7.7 7.7 0 0 0 3.64.409M10.732 3.733l1.696 1.696 1.696-1.696M5.592 8.878l1.694 1.693 1.693-1.693M21 2.857l12 10.286H21zm0 13.714v-3.428"
+            ></path>
+          </svg>
+        </span>
+        <span class="categories__text">Båt</span>
+      </a>
+    </div>
+
+    <section class="recommendations">
+      <article class="recommendations__item">
+        <img
+          src="misc/Audi.jpeg"
+          alt="Audi"
+          class="recommendations__item--image"
+        />
+        <div class="recommendations__item--info">
+          <span class="recommendations__item--info-price">249 000 kr</span>
+          <h3 class="recommendations__item--info-title">Audi</h3>
+        </div>
+        <button class="recommendations__item--like">♥</button>
+      </article>
+
+      <article class="recommendations__item">
+        <img
+          src="misc/BMW.jpeg"
+          alt="BMW"
+          class="recommendations__item--image"
+        />
+        <div class="recommendations__item--info">
+          <span class="recommendations__item--info-price">600 000 kr</span>
+          <h3 class="recommendations__item--info-title">BMW</h3>
+        </div>
+        <button class="recommendations__item--like">♥</button>
+      </article>
+
+      <article class="recommendations__item">
+        <img
+          src="misc/Porsche.jpeg"
+          alt="Porsche"
+          class="recommendations__item--image"
+        />
+        <div class="recommendations__item--info">
+          <span class="recommendations__item--info-price">650 000 kr</span>
+          <h3 class="recommendations__item--info-title">Porsche</h3>
+        </div>
+        <button class="recommendations__item--like">♥</button>
+      </article>
+    </section>
+  </body>
+</html>.  

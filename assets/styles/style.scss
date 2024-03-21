@@ -1,120 +1,195 @@
- * {
-    font-family: Arial, Helvetica, sans-serif;
- }
+$header-background: #f8f8f8;
+$category-icon-size: 60px;
+$border-color: #e5e5e5;
+$text-color: #333;
+$primary-color: #0067c5;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $header-background;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1010px;
+
+        .header__logo-container {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 90px; 
+                height: auto; 
+                margin-right: 15px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+                color: grey;
+            }
+        }
+
+        .header__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav__item {
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+                text-decoration: none;
+                color: grey;
+
+                &:hover {
+                    border-bottom: #0067c5 solid 2px;
+                    &::after {
+                      content: '';
+                      display: block;
+                      position: absolute;
+                      bottom: -5px; 
+                      left: 0;
+                      right: 0;
+                      height: 2px;
+                      background-color: #0067c5;
+                    }
+                  }
+
+                .nav__icon {
+                    margin-right: 8px;
+
+                    svg {
+                        fill: currentColor;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 main {
     display: flex;
-    background-color: rgb(232, 239, 241);
+    flex-direction: column;
+    width: 70%;
+    margin-left: 16%;
+}
+
+.search-bar {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 810px;
+    padding: 1em;
+
+
+    &__input {
+        border-width: 1px;
+    border-radius: 4px;
+    caret-color: currentColor;
+    display: block;
+    background-color: var(--w-s-color-background);
+    color: var(--w-s-color-text);
+    border-color: var(--w-s-color-border);
     width: 100%;
-    padding: 40px;
+    margin-bottom: 0rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: var(--w-font-size-m);
+    line-height: var(--w-line-height-m);
+    }
 }
 
-.phone-info {
+.categories {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 660px;
-    margin-right: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #0067c5;
+        width: $category-icon-size; 
+
+        &:hover {
+            color: grey; 
+        }
+
+        &__icon {
+            margin-bottom: 8px;
+            width: $category-icon-size;
+            height: $category-icon-size;
+
+            svg {
+                stroke: grey; 
+
+                &:hover {
+                    stroke: grey; 
+                }
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+        }
+    }
 }
 
-.phone-info {
-    font-size: 1.3rem;
-}
-
-.phone-info p {
-    margin: 10px;
-}
-
-.phone-info p img {
-    width: 20%;
-}
-
-/* Styles the container for the login section, including its layout, shadow, size, background color, and padding */
-
-.login-container {
-    display: flex;
-    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    height: 612px;
-    width: 450px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.finn-logo {
+.recommendations {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    margin: 2rem 0;
 
-h1 {
-    font-weight: bolder;
-    margin-top: 40px;
-    font-size: 2rem;
-}
+    &__item {
+        width: calc(33.333% - 1rem);
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 2rem;
 
-.form-group-1 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
+        &--image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.form-group-1 input {
-    background-color: rgb(220, 220, 220);
-    height: 70px;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 20px;
-}
+        &--info {
+            padding: 1rem;
 
-input::placeholder {
-    color: rgb(132, 124, 124);
-    font-size: 1.4rem;
-    margin-left: 30px;
-    font-weight: 500;
-    text-indent: 20px;
-}
+            &-price {
+                color: $primary-color;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
 
-.login-card__login-hint {
-    color: grey;
-}
+            &-title {
+                color: $text-color;
+                margin: 0.5rem 0;
+            }
+        }
 
-.form-group-2 {
-    display: flex;
-    flex-direction: column;
+        &--like {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
 }
-
-.password-reset, .stay-logged {
-    margin-bottom: 30px;
-}
-
-.form-group-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.form-group-3 button {
-    height: 60px;
-    width: 100%;
-    background-color: rgb(51, 100, 214);
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.form-group-3 a {
-    margin-top: 30px;
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-}
+ 
